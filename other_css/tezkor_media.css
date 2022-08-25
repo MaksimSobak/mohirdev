@@ -1,0 +1,782 @@
+@media screen and (max-width: 767px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        overflow-y: scroll;
+    }
+    header{
+        width: 100%;
+        height: 6.4vh;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        z-index: 100000000000000000000;
+    }
+    .mohirdev_logo{
+        width: 20%;
+        height: 100%;
+        /* border: 1px solid #fff; */
+    }
+    .logo_img{
+        width: 67%;
+        margin: 14% 10%;
+    }
+    .link_panel{
+        width: 27%;
+        height: 100%;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .link_panel ul{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        list-style: none;
+        padding-top: 6%;
+        padding-left: 2%;
+    }
+    .link_panel ul li a{
+        color: white;
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-size: 1.7vh;
+        padding: 28px 15px;
+    }
+    .link_panel ul li a:hover{
+        text-shadow: 0px 0px 5px white;
+    }
+    .drop{
+        width: 300px;
+        /* border: 1px solid red; */
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+        top: 7vh;
+        display: none;
+        height: 50vh;
+        z-index: 10000000000000000000000000000;
+    }
+    .down .drop a{
+        width: 100%;
+        height: 6%;
+        /* border: 1px solid black; */
+        display: block;
+        color: dodgerblue;
+        font-size: 2vh;
+        transition: 0.3s;
+    }
+    .down .drop a:hover{
+        color: gray;
+    }
+    .down:hover .drop{
+        display: block;
+    }
+    .login_btn{
+        width: 80%;
+        height: 100%;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+    .login_btn a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 62%;
+        border: 1px solid white;
+        color: #fff;
+        margin: 0.8% 2.5%;
+        font-size: 1.6vh;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 3px;
+        margin-bottom: 0.6vh;
+    }
+    .bottom_navbar{
+        width: 100%;
+        height: 7vh;
+        border-top: 1px solid lightgray;
+        position: fixed;
+        bottom: 0%;
+        background-color: white;
+        display: block;
+        z-index: 100000000000;
+    }
+    .bottom_nav_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .bottom_display_link{
+        width: 25%;
+        height: 100%;
+        border: 1px solid lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom_display_link .pointer{
+        width: 50%;
+        height: 80%;
+        /* border: 1px solid black; */
+        text-decoration: none;
+        color: gray;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 2vh;
+    }
+    .dropdown_content{
+        width: 100%;
+        height: 85vh;
+        border: none;
+        background-color: #fff;
+        position: absolute;
+        bottom: 7vh;
+        display: none;
+    }
+    .bottom_display_link .pointer:hover .dropdown_content{
+        display: block;
+    }
+    /* .pointer:hover{
+        color: red;
+    } */
+    .bottom_display_link .pointer i{
+        font-size: 2.5vh;
+    }
+    .dropdown_content a{
+        width: 100%;
+        height: 9%;
+        /* border: 1px solid black; */
+    }
+    .dropdown_content_links{
+        width: 100%;
+        height: 25%;
+        border: none;
+        display: block;
+    }
+    .dropdown_content_links a{
+        width: 100%;
+        height: 33.333%;
+        border: 1px solid lightgray;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: gray;
+    }
+    .dropdown_content_links a p{
+        padding: 0 10%;
+    }
+    .sub_dropdown{
+        width: 100%;
+        height: 68vh;
+        border: none;
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        background-color: white;
+        z-index: 10000000000000000000;
+        padding: 0;
+    }
+    .sub_dropdown a{
+        width: 100%;
+        height: 6.5vh;
+        /* border: 1px solid black; */
+        display: flex;
+        position: relative;
+        left: 0%;
+        justify-content: flex-start;
+        align-items: center;
+        top: -6.5vh;
+    }
+    footer{
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid black; */
+        font-family: 'Open Sans';
+        position: absolute;
+        top: 1220vh;
+    }
+    .footer_content{
+        width: 65%;
+        height: 100%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+    .footer_colonels{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        display: block;
+    }
+    .footer_colonel{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid lightgray; */
+    }
+    .footer_contacts{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid black; */
+        margin-top: 10%;
+    }
+    .contacts_text{
+        width: 100%;
+        height: 50%;
+        /* border-bottom: 1px solid blue; */
+        padding: 15% 6%;
+        color: gray;
+        font-size: 1.85vh;
+    }
+    .contacts_number_mail{
+        width: 100%;
+        height: 30%;
+        /* border-bottom: 1px solid red; */
+        padding: 20% 6%;
+        font-weight: 600;
+        color: gray;
+    }
+    .social_media{
+        width: 100%;
+        height: 20%;
+        /* border-top: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .social_media ul{
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0% 2%;
+    }
+    .social_media ul li{
+        padding: 0px 15%;
+    }
+    .social_media ul li a{
+        color: gray;
+    }
+    .social_media ul li a:hover{
+        color: #000;
+    }
+    .link_lists{
+        width: 100%;
+        height: 40%;
+        /* border-bottom: 1px solid black; */
+        padding: 3vh 5%;
+    }
+    .link_lists h2{
+        font-size: 1.8vh;
+    }
+    .link_lists ul{
+        width: 100%;
+        list-style: none;
+        padding: 1vh 0;
+    }
+    .link_lists ul li{
+        padding-bottom: 1.2vh;
+    }
+    .link_lists ul li a{
+        text-decoration: none;
+        color: gray;
+    }
+    .zoodpay_link{
+        display: block;
+        width: 40%;
+        height: 6.5vh;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+    }
+    .zoodpay_link img{
+        width: 100%;
+        height: 100%;
+    }
+    .credit_cards{
+        width: 100%;
+        height: 10vh;
+        /* background-color: rgba(128, 128, 128, 0.087); */
+        position: absolute;
+        top: 1320vh;
+    }
+    .credit_cards_content{
+        width: 62%;
+        height: 100%;
+        /* border: 1px solid red; */
+        margin: auto;
+        flex-direction: column;
+        background-color: rgba(128, 128, 128, 0.087);
+    }
+    .credit_cards_block{
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        /* border: 1px solid blue; */
+        flex: 0 0 100%;
+        display: inline-flex;
+        position: relative;
+        background-color: rgba(128, 128, 128, 0.087);
+    }
+    .credit_cards_block p{
+        padding: 3% 0%;
+        font-family: 'Open Sans';
+        color: gray;
+    }
+    .credit_cards_block .paragrapgh_text{
+        width: 20%;
+        /* border: 1px solid black; */
+        margin-left: 0%;
+        margin-top: 1.5%;
+    }
+    .credit_cards_icons{
+        width: 76%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .credit_cards_icons div{
+        width: 16%;
+        min-width: 16%;
+        height: 40%;
+        /* border: 1px solid black; */
+        margin: 0% 3.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .credit_cards_icons div img{
+        width: 120%;
+        margin-bottom: 40%;
+    }
+    main{
+        width: 68%;
+        height: 1340vh;
+        /* border: 1px solid blue; */
+        position: absolute;
+        top: 6.4vh;
+        left: 16%;
+        bottom: 8vh;
+        z-index: -100;
+    }
+    .main_name{
+        width: 100%;
+        height: 13.5vh;
+        /* border: 1px solid red; */
+        border-bottom: 1px solid gray;
+    }
+    .main_name_space{
+        width: 100%;
+        height: 6vh;
+        border: none;
+    }
+    .main_name_content{
+        width: 100%;
+        height: 55%;
+        position: relative;
+        top: 27%;
+        /* border: 1px solid red; */
+        flex-direction:column;
+        /* display: flex; */
+    }
+    .main_name_content_part-1{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 1vh;
+    }
+    .main_name_content_part-1 h2{
+        font-size: 2.8vh;
+        font-family: 'Open Sans';
+        padding: 0%;
+    }
+    .main_name_content_part-2{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2.2vh;
+        font-family: 'Open Sans';
+        padding: 0% 6px;
+    }
+    .main_name_content_part-2 p{
+        font-size: 2vh;
+    }
+    .main_name_content_part-2 i{
+        font-size: 1.5vh;
+        font-weight: 900;
+    }
+    .main_name_content_part-2 a{
+        text-decoration: none;
+        color: black;
+    }
+    .main_name_content_part-2 a:hover{
+        color: dodgerblue;
+    }
+    .select_container{
+        width: 100%;
+        height: 8.5vh;
+        /* border: 1px solid red; */
+    }
+    .select_container_content{
+        width: 100%;
+        height: 100%;
+        border: none;
+        position: relative;
+        top: 0%;
+    }
+    .select_first_span{
+        width: 100%;
+        height: 30%;
+        border: none;
+        position: relative;
+        display: flex;
+        top: 0%;
+        padding: 0%;
+        font-size: 1.5vh;
+    }
+    .select_first_span h2{
+        font-family: 'Open Sans';
+        font-weight: 400;
+    }
+    .select_first_span h2 span{
+        font-weight: 700;
+    }
+    .select_second_span{
+        width: 100%;
+        height: 30%;
+        border: none;
+        position: relative;
+        top: 45%;
+        display: flex;
+    }
+    .select_second_span_part-1{
+        width: 50%;
+        height: 100%;
+        border: none;
+    }
+    .select_list{
+        width: 45%;
+        height: 100%;
+        border: none;
+        position: relative;
+        left: 0%;
+        display: flex;
+    }
+    .newest_item{
+        width: 80%;
+        height: 100%;
+        border: none;
+        font-family: 'Open Sans';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 1.575vh;
+    }
+    .down_arrow{
+        width: 20%;
+        height: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .down_arrow:hover .dropdown_item_links{
+        display: block;
+    }
+    .dropdown_item_links{
+        width: 18ch;
+        height: 16vh;
+        border: 1px solid lightgray;
+        background-color: #fff;
+        position: absolute;
+        top: 2vh;
+        left: -2%;
+        border-radius: 4px;
+        display: none;
+    }
+    .dropdown_item_links a{
+        width: 100%;
+        height: 25%;
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        font-family: 'Open Sans';
+        padding: 0% 0.9ch;
+    }
+    .dropdown_item_links a:hover{
+        background-color: lightgray;
+    }
+    /* .dropdown_item_links p{
+        text-align: start;
+    } */
+    .select_second_span_part-2{
+        width: 50%;
+        height: 100%;
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Open Sans';
+        font-weight: 500;
+    }
+    .member_cards{
+        width: 100%;
+        height: 80vh;
+        border: none;
+        margin-top: 4.5vh;
+        transition: 1s;
+        border: 1px solid lightgray;
+        flex-wrap: wrap;
+    }
+    .member_image{
+        width: 100%;
+        height: 70%;
+        border: none;
+        background-image: url(../images/kotlin-asoslari.webp);
+        background-size: cover;
+        background-position: center;
+        transition: 1s;
+    }
+    .member_cards:hover .member_links_animation{
+        display: flex;
+    }
+    .member_links_animation{
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        transition: 1s;
+    }
+    .member_links_span{
+        width: 36%;
+        height: 20%;
+        /* border: 1px solid #fff; */
+        /* background-color: #fff; */
+        animation-name: member_links_animation;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+    }
+    .member_first_link{
+        width: 80%;
+        height: 42%;
+        /* border: 1px solid red; */
+        position: relative;
+        display: flex;
+        top: 0%;
+        left: 10%;
+        color: orangered;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        font-family: 'Open Sans';
+        font-weight: 500;
+        border-radius: 2px;
+        transition: 0.3s;
+        font-size: 1.5vh;
+    }
+    .member_first_link:hover{
+        background-color: black;
+        color: white;
+    }
+    .member_second_link:hover{
+        background-color: black;
+        color: white;
+    }
+    .member_second_link{
+        width: 100%;
+        height: 42%;
+        background-color: #000;
+        position: relative;
+        display: flex;
+        top: 16%;
+        background-color: #fff;
+        justify-content: center;
+        align-items: center;
+        color: orangered;
+        font-family: 'Open Sans';
+        text-decoration: none;
+        border-radius: 2px;
+        transition: 0.3s;
+        font-size: 1.6vh;
+        font-weight: 500;
+    }
+    @keyframes member_links_animation {
+        from {position: relative; top: 30vh}
+        to {position: relative; top: 0;}
+    }
+    .member_part-2{
+        width: 100%;
+        height: 30%;
+        /* border: 1px solid green; */
+        display: flex;
+    }
+    .member_content{
+        width: 70%;
+        height: 100%;
+        border: none;
+        border: 1px solid transparent;
+    }
+    .member_content_information{
+        width: 100%;
+        height: 80%;
+        border: none;
+        position: relative;
+        top: 20%;
+        left: 0%
+    }
+    .featured_container{
+        width: 100%;
+        height: 16%;
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .featured_container span{
+        width: 25%;
+        height: 80%;
+        background-color: blue;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.2vh;
+        font-weight: 700;
+    }
+    .member_courses_name{
+        width: 100%;
+        height: 28%;
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .member_courses_name h3 a{
+        color: black;
+        text-decoration: none;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+    .member_courses_name h3 a:hover{
+        color: dodgerblue;
+    }
+    .courses_counts{
+        width: 100%;
+        height: 25%;
+        border: none;
+        font-size: 1.5vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: gray;
+    }
+    .member_name{
+        width: 100%;
+        height: 28%;
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+    .member_name_img{
+        width: 32px;
+        height: 32px;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .member_name_img a{
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        border-radius: 50%;
+    }
+    .member_name_img a img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .member_name_text{
+        color: black;
+        text-decoration: none;
+        font-size: 1.7vh;
+        position: relative;
+        left: 4%;
+    }
+    .member_name_text:hover{
+        color: dodgerblue;
+    }
+    .member_reviews{
+        width: 30%;
+        height: 100%;
+        border: none;
+        display:inline-table;
+    }
+    .member_reviews_text{
+        width: 90%;
+        height: 28%;
+        border: none;
+        position: relative;
+        left: 5%;
+        top: 35%;
+    }
+    .member_reviews_text_main{
+        width: 70%;
+        height: 100%;
+        border: none;
+        position: relative;
+        left: 30%;
+    }
+    .content_costs{
+        width: 100%;
+        height: 35%;
+        border: none;
+        position: relative;
+        top: 0%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .reviews_star{
+        width: 100%;
+        height: 45%;
+        border: none;
+        display: flex;
+    }
+    .review_count{
+        width: 100%;
+        height: 20%;
+        border: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        top: 0%;
+        color: gray;
+        display: none;
+    }
+}

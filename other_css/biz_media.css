@@ -1,0 +1,634 @@
+@media screen and (max-width: 767px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        overflow-y: scroll;
+    }
+    header{
+        width: 100%;
+        height: 6.4vh;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        z-index: 100000000000000000000;
+    }
+    .mohirdev_logo{
+        width: 20%;
+        height: 100%;
+        /* border: 1px solid #fff; */
+    }
+    .logo_img{
+        width: 67%;
+        margin: 14% 10%;
+    }
+    .link_panel{
+        width: 27%;
+        height: 100%;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+    .link_panel ul{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        list-style: none;
+        padding-top: 6%;
+        padding-left: 2%;
+    }
+    .link_panel ul li a{
+        color: white;
+        text-decoration: none;
+        font-family: "Open Sans";
+        font-size: 1.7vh;
+        padding: 28px 15px;
+    }
+    .link_panel ul li a:hover{
+        text-shadow: 0px 0px 5px white;
+    }
+    .drop{
+        width: 300px;
+        /* border: 1px solid red; */
+        background-color: white;
+        border-radius: 5px;
+        position: absolute;
+        top: 7vh;
+        display: none;
+        height: 50vh;
+        z-index: 10000000000000000000000000000;
+    }
+    .down .drop a{
+        width: 100%;
+        height: 6%;
+        /* border: 1px solid black; */
+        display: block;
+        color: dodgerblue;
+        font-size: 2vh;
+        transition: 0.3s;
+    }
+    .down .drop a:hover{
+        color: gray;
+    }
+    .down:hover .drop{
+        display: block;
+    }
+    .login_btn{
+        width: 80%;
+        height: 100%;
+        border: 1px solid transparent;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        /* border: 1px solid white; */
+    }
+    .login_btn a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        height: 62%;
+        border: 1px solid white;
+        color: #fff;
+        margin: 0.8% 2.5%;
+        font-size: 1.6vh;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 3px;
+        margin-bottom: 0.6vh;
+    }
+    .bottom_navbar{
+        width: 100%;
+        height: 7vh;
+        border-top: 1px solid lightgray;
+        position: fixed;
+        bottom: 0%;
+        background-color: white;
+        display: block;
+        z-index: 10000;
+    }
+    .bottom_nav_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .bottom_display_link{
+        width: 25%;
+        height: 100%;
+        border: 1px solid lightgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottom_display_link .pointer{
+        width: 50%;
+        height: 80%;
+        /* border: 1px solid black; */
+        text-decoration: none;
+        color: gray;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 2vh;
+    }
+    .dropdown_content{
+        width: 100%;
+        height: 85vh;
+        border: none;
+        background-color: #fff;
+        position: absolute;
+        bottom: 7vh;
+        display: none;
+    }
+    .bottom_display_link .pointer:hover .dropdown_content{
+        display: block;
+    }
+    /* .pointer:hover{
+        color: red;
+    } */
+    .bottom_display_link .pointer i{
+        font-size: 2.5vh;
+    }
+    .dropdown_content a{
+        width: 100%;
+        height: 9%;
+        /* border: 1px solid black; */
+    }
+    .dropdown_content_links{
+        width: 100%;
+        height: 25%;
+        border: none;
+        display: block;
+    }
+    .dropdown_content_links a{
+        width: 100%;
+        height: 33.333%;
+        border: 1px solid lightgray;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        color: gray;
+    }
+    .dropdown_content_links a p{
+        padding: 0 10%;
+    }
+    .sub_dropdown{
+        width: 100%;
+        height: 68vh;
+        border: none;
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        background-color: white;
+        z-index: 10000000000000000000;
+        padding: 0;
+    }
+    .sub_dropdown a{
+        width: 100%;
+        height: 6.5vh;
+        /* border: 1px solid black; */
+        display: flex;
+        position: relative;
+        left: 0%;
+        justify-content: flex-start;
+        align-items: center;
+        top: -6.5vh;
+    }
+    main{
+        width: 68%;
+        height: 523vh;
+        border: none;
+        position: absolute;
+        top: 6.4vh;
+        left: 16%;
+        bottom: 8vh;
+        z-index: -100;
+    }
+    .main_name{
+        width: 100%;
+        height: 13.5vh;
+        /* border: 1px solid red; */
+        border-bottom: 1px solid gray;
+    }
+    .main_name_content{
+        width: 100%;
+        height: 55%;
+        position: relative;
+        top: 27%;
+        /* border: 1px solid red; */
+        flex-direction:column;
+        /* display: flex; */
+    }
+    .main_name_space{
+        width: 100%;
+        height: 6vh;
+        border: none;
+    }
+    .main_name_content_part-1{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 1vh;
+    }
+    .main_name_content_part-1 h2{
+        font-size: 2.8vh;
+        font-family: 'Open Sans';
+        padding: 0%;
+    }
+    .main_name_content_part-2{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 2.2vh;
+        font-family: 'Open Sans';
+        padding: 0% 6px;
+    }
+    .main_name_content_part-2 p{
+        font-size: 2vh;
+    }
+    .main_name_content_part-2 i{
+        font-size: 1.5vh;
+        font-weight: 900;
+    }
+    .main_name_content_part-2 a{
+        text-decoration: none;
+        color: black;
+    }
+    .main_name_content_part-2 a:hover{
+        color: dodgerblue;
+    }
+    .img_text{
+        width: 100%;
+        height: 96vh;
+        border: none;
+    }
+    .img_text_content{
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        border: none;
+        flex-direction: column;
+    }
+    .img_part{
+        width: 100%;
+        height: 50%;
+        /* background-color: red; */
+    }
+    .img_block{
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+    .img_block img{
+        width: 100%;
+        height: 100%;
+    }
+    .text_part{
+        width: 100%;
+        height: 50%;
+        /* background-color: blue; */
+    }
+    .text_part h2{
+        font-size: 2.3vh;
+    }
+    .text_part span{
+        margin-top: 2.8vh;
+        display: block;
+        line-height: 2.2vh;
+        font-size: 1.7vh;
+    }
+    .mohirdev_history{
+        width: 100%;
+        height: 16vh;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3vh;
+    }
+    .mohirdev_history h1{
+        font-weight: 900;
+    }
+    .mohirdev_chronology{
+        width: 100%;
+        border: none;
+        height: 180vh;
+    }
+    /* .mohirdev_chronology_vertical_line{
+        width: 1%;
+        height: 100%;
+        border: 1px solid gray;
+        z-index: -100000;
+        position: relative;
+        top: 0%;
+        margin: auto;
+    } */
+    .mohirdev_chronology_dates{
+        width: 100%;
+        height: 30vh;
+        border: none;
+        z-index: -100;
+        position: relative;
+        top: 0%;
+    }
+    .mohirdev_chronology_date_inf{
+        width: 100%;
+        height: 100%;
+        border: none;
+        flex-direction: column;
+    }
+    .chronology_event_1{
+        width: 100%;
+        height: 50%;
+        position: relative;
+        top: 0%;
+        left: -0.8%;
+        z-index: -100;
+        border: none;
+        border-left: 7px solid gray;
+    }
+    .paragraph_block{
+        display: block;
+        background-color: rgba(211, 211, 211, 0.197);
+        width: 85%;
+        height: 80%;
+        position: relative;
+        top: 20%;
+        left: 15.8%;
+        border: none;
+        border-radius: 5px;
+    }
+    .paragraph_block p{
+        padding: 6.5%;
+        font-weight: 600;
+    }
+    .chronology_date_1{
+        width: 100%;
+        height: 50%;
+        border: none;
+        position: relative;
+        top: 0%;
+        border: none;
+        left: 0%;
+        z-index: -1000;
+    }
+    .chronology_date_1 p{
+        padding: 1% 18%;
+        font-weight: 500;
+    }
+    /* .chronology_icon{
+        width: 12%;
+        height: 50%;
+        border: 1px solid green;
+        position: relative;
+        top: 0%;
+        z-index: 10000;
+    } */
+    .chronology_icon{
+        width: 9%;
+        height: 38%;
+        background-color: blue;
+        position: relative;
+        left: -5%;
+        top: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 2.8vh;
+        z-index: 1000;
+        border-radius: 50%;
+    }
+    .vertical_line_block{
+        width: 100%;
+        height: 50%;
+        /* background-color: red; */
+        position: relative;
+        top: -50%;
+    }
+    .vertical_line{
+        width: 6px;
+        height: 100%;
+        position: relative;
+        left: -0.8%;
+        background-color: gray;
+    }
+    .links_container{
+        width: 100%;
+        height: 24vh;
+        border: none;
+    }
+    .links_container span{
+        width: 100%;
+        height: 28%;
+        display: flex;
+        border: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-weight: 600;
+        position: relative;
+        top: 0%;
+        font-size: 1.55vh;
+        margin-top: 2%;
+    }
+    .links_container span a{
+        color: blue;
+        text-decoration: none;
+    }
+    .mohirdev_team_image{
+        width: 100%;
+        height: 24vh;
+        border: none;
+        background-image: url(../images/Mohirdev-Praktikum-jamoasi-1-scaled.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .mohirdev_team_text_links{
+        width: 100%;
+        height: 120vh;
+        border: none;
+        margin-top: 10vh;
+    }
+    .mohirdev_team_text_links span{
+        width: 100%;
+        height: auto;
+        display: block;
+        border: none;
+        line-height: 3vh;
+        margin-top: 6vh;
+    }
+    .mohirdev_team_text_links span a{
+        color: dodgerblue;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    footer{
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid black; */
+        font-family: 'Open Sans';
+    }
+    .footer_content{
+        width: 65%;
+        height: 100%;
+        /* border: 1px solid red; */
+        margin: auto;
+    }
+    .footer_colonels{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        display: block;
+    }
+    .footer_colonel{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid lightgray; */
+    }
+    .footer_contacts{
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid black; */
+        margin-top: 10%;
+    }
+    .contacts_text{
+        width: 100%;
+        height: 50%;
+        /* border-bottom: 1px solid blue; */
+        padding: 15% 6%;
+        color: gray;
+        font-size: 1.85vh;
+    }
+    .contacts_number_mail{
+        width: 100%;
+        height: 30%;
+        /* border-bottom: 1px solid red; */
+        padding: 20% 6%;
+        font-weight: 600;
+        color: gray;
+    }
+    .social_media{
+        width: 100%;
+        height: 20%;
+        /* border-top: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .social_media ul{
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        padding: 0% 2%;
+    }
+    .social_media ul li{
+        padding: 0px 15%;
+    }
+    .social_media ul li a{
+        color: gray;
+    }
+    .social_media ul li a:hover{
+        color: #000;
+    }
+    .link_lists{
+        width: 100%;
+        height: 40%;
+        /* border-bottom: 1px solid black; */
+        padding: 3vh 5%;
+    }
+    .link_lists h2{
+        font-size: 1.8vh;
+    }
+    .link_lists ul{
+        width: 100%;
+        list-style: none;
+        padding: 1vh 0;
+    }
+    .link_lists ul li{
+        padding-bottom: 1.2vh;
+    }
+    .link_lists ul li a{
+        text-decoration: none;
+        color: gray;
+    }
+    .zoodpay_link{
+        display: block;
+        width: 40%;
+        height: 6.5vh;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+    }
+    .zoodpay_link img{
+        width: 100%;
+        height: 100%;
+    }
+    .credit_cards{
+        width: 100%;
+        height: 10vh;
+        /* background-color: rgba(128, 128, 128, 0.087); */
+    }
+    .credit_cards_content{
+        width: 62%;
+        height: 100%;
+        /* border: 1px solid red; */
+        margin: auto;
+        flex-direction: column;
+        background-color: rgba(128, 128, 128, 0.087);
+    }
+    .credit_cards_block{
+        width: 100%;
+        max-width: 100%;
+        height: 50%;
+        /* border: 1px solid blue; */
+        flex: 0 0 100%;
+        display: inline-flex;
+        position: relative;
+        background-color: rgba(128, 128, 128, 0.087);
+    }
+    .credit_cards_block p{
+        padding: 3% 0%;
+        font-family: 'Open Sans';
+        color: gray;
+    }
+    .credit_cards_block .paragrapgh_text{
+        width: 20%;
+        /* border: 1px solid black; */
+        margin-left: 0%;
+        margin-top: 1.5%;
+    }
+    .credit_cards_icons{
+        width: 76%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .credit_cards_icons div{
+        width: 16%;
+        min-width: 16%;
+        height: 40%;
+        /* border: 1px solid black; */
+        margin: 0% 3.8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .credit_cards_icons div img{
+        width: 120%;
+        margin-bottom: 40%;
+    }
+}
